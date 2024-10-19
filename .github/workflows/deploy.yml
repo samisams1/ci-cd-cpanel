@@ -17,7 +17,6 @@ jobs:
         with:
           server: ftp.virtualekubdash.com                      # FTP server address
           username: test1@test1.virtualekubdash.com           # FTP username
-          password: ${{ secrets.PASSWORD }}                   # Use GitHub Secrets for FTP password
-          local-dir: './'                                     # Local directory to deploy
+          password: ${{ secrets.PASSWORD }}                   # Use GitHub Secrets for FTP passwor                                   # Local directory to deploy
           protocol: ftp                                       # Change to 'ftps' if SSL is enabled
           server-dir: /test1.virtualekubdash.com/           # Path to the public HTML directory
