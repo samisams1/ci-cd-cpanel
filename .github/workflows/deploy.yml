@@ -15,9 +15,9 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5  # Use the latest version
         with:
-          server:  ftp.virtualekubdash.com          # FTP server address
-          username: test2@test2.virtualekubdash.com       # FTP username
-          password: ${{ secrets.PASSWORD }}      # FTP password
-          protocol: ftp                               # Use 'ftp' or 'ftps' as needed
-          server-dir: /https://test2.virtualekubdash.com/                   # Adjust to the correct remote directory
-          local-dir: ./                               # Local directory to upload from
+          server: ftp.virtualekubdash.com             # FTP server address
+          username: test2                              # FTP username (without domain)
+          password: ${{ secrets.PASSWORD }}            # FTP password
+          protocol: ftp                                # Use 'ftp' or 'ftps' as needed
+          server-dir: /test1.virtualekubdash.com//                    # Adjust to the correct remote directory
+          local-dir: ./                                # Local directory to upload from
