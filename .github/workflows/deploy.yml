@@ -19,8 +19,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          server-dir: /test1.virtualekubdash.com/  # Adjust this if needed
           local-dir: ./  # If your index.html is in the root, keep this as './'
-          dry-run: false  # Change to true for testing without actual upload     
+          dry-run: false  # Change to true for testing without actual upload                                     # Change to 'ftps' if SSL is enabled
+          server-dir: /home/virtuada/test1.virtualekubdash.com/  
              
                  # Path to the public HTML directory
