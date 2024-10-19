@@ -15,9 +15,9 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp.virtualekubdash.com
-          username: test2@test2.virtualekubdash.com
-          password: samisams@123
-          protocol: ftp
-          local-dir: ./  # Uploads all files from the root of the repository
-          server-dir: /public_html/test2/  # Target directory on the server
+          server: ftp.virtualekubdash.com                     # FTP server address
+          username: newtest@test2.virtualekubdash.com          # Full FTP username
+          password: samisams@123             # Use a GitHub secret for the password
+          protocol: ftp                                      # Use 'ftp' or 'ftps' as needed
+          local-dir: ./                
+          
