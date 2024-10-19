@@ -20,4 +20,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}                   # Use GitHub Secrets for FTP password
           local-dir: './'                                     # Local directory to deploy
           protocol: ftp                                       # Change to 'ftps' if SSL is enabled
-          server-dir: /home/virtuada/test1.virtualekubdash.com/            # Path to the public HTML directory
+          server-dir: /home/virtuada/test1.virtualekubdash.com/     
+                 # Path to the public HTML directory
