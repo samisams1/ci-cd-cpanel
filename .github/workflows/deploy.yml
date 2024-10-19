@@ -20,6 +20,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}           # FTP password
           local-dir: './'                             # Local directory to deploy
           protocol: ftp                               # Use 'ftp' or 'ftps' as needed
-          server-dir: /home/virtuada/test1.virtualekubdash.com/                    # Remote directory on the server
-
-          
+          server-dir: /home/virtuada/test1.virtualekubdash.com/    # Path to the public HTML directory
