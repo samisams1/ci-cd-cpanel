@@ -20,5 +20,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}      # FTP password
           local-dir: './'                               # Local directory to deploy
           protocol: ftp
-          server-dir: /home/virtualekubdash.com/test/ # Remote directory on the server
+          server-dir: / # Remote directory on the server
           
