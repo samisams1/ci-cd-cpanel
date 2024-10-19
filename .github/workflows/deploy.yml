@@ -15,9 +15,9 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ${{ secrets.FTP_SERVER }}          # FTP server address
-          username: ${{ secrets.FTP_USERNAME }}      # FTP username
-          password: ${{ secrets.PASSWORD }}           # FTP password
-          local-dir: './'                             # Local directory to deploy
-          protocol: ftp                               # Use 'ftp' or 'ftps' as needed
-          server-dir: '/home/virtualekubdash.com/test1/'
+          server: ftp.virtualekubdash.com                      # FTP server address
+          username: test1@test1.virtualekubdash.com           # FTP username
+          password: ${{ secrets.PASSWORD }}                   # Use GitHub Secrets for FTP password
+          local-dir: './'                                     # Local directory to deploy
+          protocol: ftp                                       # Change to 'ftps' if SSL is enabled
+          server-dir: /home/virtuada/test1.virtualekubdash.com/            # Path to the public HTML directory
