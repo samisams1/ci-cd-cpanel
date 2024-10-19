@@ -20,3 +20,4 @@ jobs:
           password: samisams@123             # Use a GitHub secret for the password
           protocol: ftp                                      # Use 'ftp' or 'ftps' as needed
           local-dir: ./                                      # Local directory to upload from
+          server-dir: /public_html/  
