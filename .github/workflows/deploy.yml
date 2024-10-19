@@ -13,11 +13,11 @@ jobs:
         uses: actions/checkout@v2
       
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.1.0  # Ensure you are using the latest version
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5  # Use the latest version
         with:
-          server: ${{ secrets.FTP_SERVER }}           # FTP server address
+          server: test1.virtualekubdash.com           # FTP server address
           username: ${{ secrets.FTP_USERNAME }}       # FTP username
-          password: ${{ secrets.PASSWORD }}        # Use the correct secret name for your password
+          password: ${{ secrets.FTP_PASSWORD }}        # FTP password
           protocol: ftp                               # Use 'ftp' or 'ftps' as needed
-          server-dir: /test1.virtualekubdash.com/     # Remote directory on the server
-          local-dir: ./                               # Local directory to upload from (adjust if necessary)
+          server-dir: /https://test1.virtualekubdash.com/                   # Adjust to the correct remote directory
+          local-dir: ./                               # Local directory to upload from
