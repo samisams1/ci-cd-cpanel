@@ -15,7 +15,7 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5  # Use the latest version
         with:
-          server: test1.virtualekubdash.com           # FTP server address
+          server: ftp.virtualekubdash.com           # FTP server address
           username: ${{ secrets.FTP_USERNAME }}       # FTP username
           password: ${{ secrets.FTP_PASSWORD }}        # FTP password
           protocol: ftp                               # Use 'ftp' or 'ftps' as needed
