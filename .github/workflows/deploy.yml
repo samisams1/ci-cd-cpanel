@@ -19,5 +19,5 @@ jobs:
           username: test2@test2.virtualekubdash.com                              # FTP username (without domain)
           password: ${{ secrets.PASSWORD }}            # FTP password
           protocol: ftp                                # Use 'ftp' or 'ftps' as needed
-          server-dir: /test1.virtualekubdash.com//                    # Adjust to the correct remote directory
+          server-dir: /test2.virtualekubdash.com/                    # Adjust to the correct remote directory
           local-dir: ./                                # Local directory to upload from
