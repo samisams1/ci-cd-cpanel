@@ -17,7 +17,7 @@ jobs:
         with:
           server: ${{ secrets.FTP_SERVER }}           # FTP server address
           username: ${{ secrets.FTP_USERNAME }}       # FTP username
-          password: ${{ secrets.FTP_PASSWORD }}        # Use the correct secret name for your password
+          password: ${{ secrets.PASSWORD }}        # Use the correct secret name for your password
           protocol: ftp                               # Use 'ftp' or 'ftps' as needed
           server-dir: /test1.virtualekubdash.com/     # Remote directory on the server
           local-dir: ./                               # Local directory to upload from (adjust if necessary)
